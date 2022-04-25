@@ -103,7 +103,7 @@ namespace WindowsFormsApp11April
 
         private void labelManajerAway_Click(object sender, EventArgs e)
         {
-
+               
         }
 
         private void buttonCheck_Click(object sender, EventArgs e)
