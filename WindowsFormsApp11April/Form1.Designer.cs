@@ -44,30 +44,37 @@ namespace WindowsFormsApp11April
             this.labelStadion = new System.Windows.Forms.Label();
             this.labelCapacity = new System.Windows.Forms.Label();
             this.labelKapasitas = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.labelTanggal = new System.Windows.Forms.Label();
+            this.labelSkor = new System.Windows.Forms.Label();
+            this.labelHasilTanggal = new System.Windows.Forms.Label();
+            this.labelHasilSkor = new System.Windows.Forms.Label();
+            this.buttonCheck = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBoxHome
             // 
             this.comboBoxHome.FormattingEnabled = true;
-            this.comboBoxHome.Location = new System.Drawing.Point(12, 31);
+            this.comboBoxHome.Location = new System.Drawing.Point(12, 27);
             this.comboBoxHome.Name = "comboBoxHome";
-            this.comboBoxHome.Size = new System.Drawing.Size(160, 24);
+            this.comboBoxHome.Size = new System.Drawing.Size(393, 24);
             this.comboBoxHome.TabIndex = 0;
             this.comboBoxHome.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboBoxAway
             // 
             this.comboBoxAway.FormattingEnabled = true;
-            this.comboBoxAway.Location = new System.Drawing.Point(324, 31);
+            this.comboBoxAway.Location = new System.Drawing.Point(474, 27);
             this.comboBoxAway.Name = "comboBoxAway";
-            this.comboBoxAway.Size = new System.Drawing.Size(181, 24);
+            this.comboBoxAway.Size = new System.Drawing.Size(432, 24);
             this.comboBoxAway.TabIndex = 1;
             this.comboBoxAway.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // labelVersus
             // 
             this.labelVersus.AutoSize = true;
-            this.labelVersus.Location = new System.Drawing.Point(237, 34);
+            this.labelVersus.Location = new System.Drawing.Point(429, 34);
             this.labelVersus.Name = "labelVersus";
             this.labelVersus.Size = new System.Drawing.Size(26, 17);
             this.labelVersus.TabIndex = 2;
@@ -76,7 +83,7 @@ namespace WindowsFormsApp11April
             // labelCaptainHome
             // 
             this.labelCaptainHome.AutoSize = true;
-            this.labelCaptainHome.Location = new System.Drawing.Point(12, 75);
+            this.labelCaptainHome.Location = new System.Drawing.Point(138, 79);
             this.labelCaptainHome.Name = "labelCaptainHome";
             this.labelCaptainHome.Size = new System.Drawing.Size(61, 17);
             this.labelCaptainHome.TabIndex = 3;
@@ -86,7 +93,7 @@ namespace WindowsFormsApp11April
             // labelKaptenHome
             // 
             this.labelKaptenHome.AutoSize = true;
-            this.labelKaptenHome.Location = new System.Drawing.Point(79, 75);
+            this.labelKaptenHome.Location = new System.Drawing.Point(205, 79);
             this.labelKaptenHome.Name = "labelKaptenHome";
             this.labelKaptenHome.Size = new System.Drawing.Size(31, 17);
             this.labelKaptenHome.TabIndex = 4;
@@ -96,7 +103,7 @@ namespace WindowsFormsApp11April
             // labelManagerHome
             // 
             this.labelManagerHome.AutoSize = true;
-            this.labelManagerHome.Location = new System.Drawing.Point(12, 58);
+            this.labelManagerHome.Location = new System.Drawing.Point(127, 62);
             this.labelManagerHome.Name = "labelManagerHome";
             this.labelManagerHome.Size = new System.Drawing.Size(72, 17);
             this.labelManagerHome.TabIndex = 5;
@@ -105,7 +112,7 @@ namespace WindowsFormsApp11April
             // labelManajerHome
             // 
             this.labelManajerHome.AutoSize = true;
-            this.labelManajerHome.Location = new System.Drawing.Point(79, 58);
+            this.labelManajerHome.Location = new System.Drawing.Point(205, 62);
             this.labelManajerHome.Name = "labelManajerHome";
             this.labelManajerHome.Size = new System.Drawing.Size(31, 17);
             this.labelManajerHome.TabIndex = 6;
@@ -115,7 +122,7 @@ namespace WindowsFormsApp11April
             // labelManagerAway
             // 
             this.labelManagerAway.AutoSize = true;
-            this.labelManagerAway.Location = new System.Drawing.Point(324, 58);
+            this.labelManagerAway.Location = new System.Drawing.Point(653, 54);
             this.labelManagerAway.Name = "labelManagerAway";
             this.labelManagerAway.Size = new System.Drawing.Size(76, 17);
             this.labelManagerAway.TabIndex = 7;
@@ -124,7 +131,7 @@ namespace WindowsFormsApp11April
             // labelCaptainAway
             // 
             this.labelCaptainAway.AutoSize = true;
-            this.labelCaptainAway.Location = new System.Drawing.Point(327, 79);
+            this.labelCaptainAway.Location = new System.Drawing.Point(655, 75);
             this.labelCaptainAway.Name = "labelCaptainAway";
             this.labelCaptainAway.Size = new System.Drawing.Size(65, 17);
             this.labelCaptainAway.TabIndex = 8;
@@ -133,7 +140,7 @@ namespace WindowsFormsApp11April
             // labelManajerAway
             // 
             this.labelManajerAway.AutoSize = true;
-            this.labelManajerAway.Location = new System.Drawing.Point(396, 58);
+            this.labelManajerAway.Location = new System.Drawing.Point(726, 54);
             this.labelManajerAway.Name = "labelManajerAway";
             this.labelManajerAway.Size = new System.Drawing.Size(31, 17);
             this.labelManajerAway.TabIndex = 9;
@@ -143,7 +150,7 @@ namespace WindowsFormsApp11April
             // labelKaptenAway
             // 
             this.labelKaptenAway.AutoSize = true;
-            this.labelKaptenAway.Location = new System.Drawing.Point(388, 79);
+            this.labelKaptenAway.Location = new System.Drawing.Point(726, 75);
             this.labelKaptenAway.Name = "labelKaptenAway";
             this.labelKaptenAway.Size = new System.Drawing.Size(31, 17);
             this.labelKaptenAway.TabIndex = 10;
@@ -152,7 +159,7 @@ namespace WindowsFormsApp11April
             // labelStadium
             // 
             this.labelStadium.AutoSize = true;
-            this.labelStadium.Location = new System.Drawing.Point(151, 202);
+            this.labelStadium.Location = new System.Drawing.Point(381, 93);
             this.labelStadium.Name = "labelStadium";
             this.labelStadium.Size = new System.Drawing.Size(67, 17);
             this.labelStadium.TabIndex = 11;
@@ -161,7 +168,7 @@ namespace WindowsFormsApp11April
             // labelStadion
             // 
             this.labelStadion.AutoSize = true;
-            this.labelStadion.Location = new System.Drawing.Point(237, 202);
+            this.labelStadion.Location = new System.Drawing.Point(471, 93);
             this.labelStadion.Name = "labelStadion";
             this.labelStadion.Size = new System.Drawing.Size(31, 17);
             this.labelStadion.TabIndex = 12;
@@ -171,7 +178,7 @@ namespace WindowsFormsApp11April
             // labelCapacity
             // 
             this.labelCapacity.AutoSize = true;
-            this.labelCapacity.Location = new System.Drawing.Point(151, 223);
+            this.labelCapacity.Location = new System.Drawing.Point(380, 110);
             this.labelCapacity.Name = "labelCapacity";
             this.labelCapacity.Size = new System.Drawing.Size(74, 17);
             this.labelCapacity.TabIndex = 13;
@@ -180,18 +187,80 @@ namespace WindowsFormsApp11April
             // labelKapasitas
             // 
             this.labelKapasitas.AutoSize = true;
-            this.labelKapasitas.Location = new System.Drawing.Point(237, 223);
+            this.labelKapasitas.Location = new System.Drawing.Point(471, 110);
             this.labelKapasitas.Name = "labelKapasitas";
             this.labelKapasitas.Size = new System.Drawing.Size(31, 17);
             this.labelKapasitas.TabIndex = 14;
             this.labelKapasitas.Text = "N/A";
             this.labelKapasitas.Click += new System.EventHandler(this.labelKapasitas_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 217);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(913, 385);
+            this.dataGridView1.TabIndex = 15;
+            // 
+            // labelTanggal
+            // 
+            this.labelTanggal.AutoSize = true;
+            this.labelTanggal.Location = new System.Drawing.Point(380, 170);
+            this.labelTanggal.Name = "labelTanggal";
+            this.labelTanggal.Size = new System.Drawing.Size(68, 17);
+            this.labelTanggal.TabIndex = 16;
+            this.labelTanggal.Text = "Tanggal :";
+            // 
+            // labelSkor
+            // 
+            this.labelSkor.AutoSize = true;
+            this.labelSkor.Location = new System.Drawing.Point(381, 187);
+            this.labelSkor.Name = "labelSkor";
+            this.labelSkor.Size = new System.Drawing.Size(45, 17);
+            this.labelSkor.TabIndex = 17;
+            this.labelSkor.Text = "Skor :";
+            // 
+            // labelHasilTanggal
+            // 
+            this.labelHasilTanggal.AutoSize = true;
+            this.labelHasilTanggal.Location = new System.Drawing.Point(455, 170);
+            this.labelHasilTanggal.Name = "labelHasilTanggal";
+            this.labelHasilTanggal.Size = new System.Drawing.Size(31, 17);
+            this.labelHasilTanggal.TabIndex = 18;
+            this.labelHasilTanggal.Text = "N/A";
+            // 
+            // labelHasilSkor
+            // 
+            this.labelHasilSkor.AutoSize = true;
+            this.labelHasilSkor.Location = new System.Drawing.Point(432, 187);
+            this.labelHasilSkor.Name = "labelHasilSkor";
+            this.labelHasilSkor.Size = new System.Drawing.Size(31, 17);
+            this.labelHasilSkor.TabIndex = 19;
+            this.labelHasilSkor.Text = "N/A";
+            // 
+            // buttonCheck
+            // 
+            this.buttonCheck.Location = new System.Drawing.Point(384, 139);
+            this.buttonCheck.Name = "buttonCheck";
+            this.buttonCheck.Size = new System.Drawing.Size(102, 28);
+            this.buttonCheck.TabIndex = 20;
+            this.buttonCheck.Text = "Check";
+            this.buttonCheck.UseVisualStyleBackColor = true;
+            this.buttonCheck.Click += new System.EventHandler(this.buttonCheck_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(517, 321);
+            this.ClientSize = new System.Drawing.Size(918, 604);
+            this.Controls.Add(this.buttonCheck);
+            this.Controls.Add(this.labelHasilSkor);
+            this.Controls.Add(this.labelHasilTanggal);
+            this.Controls.Add(this.labelSkor);
+            this.Controls.Add(this.labelTanggal);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.labelKapasitas);
             this.Controls.Add(this.labelCapacity);
             this.Controls.Add(this.labelStadion);
@@ -210,6 +279,7 @@ namespace WindowsFormsApp11April
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,6 +302,12 @@ namespace WindowsFormsApp11April
         private System.Windows.Forms.Label labelStadion;
         private System.Windows.Forms.Label labelCapacity;
         private System.Windows.Forms.Label labelKapasitas;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label labelTanggal;
+        private System.Windows.Forms.Label labelSkor;
+        private System.Windows.Forms.Label labelHasilTanggal;
+        private System.Windows.Forms.Label labelHasilSkor;
+        private System.Windows.Forms.Button buttonCheck;
     }
 }
 

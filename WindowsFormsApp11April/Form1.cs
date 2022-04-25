@@ -105,5 +105,16 @@ namespace WindowsFormsApp11April
         {
 
         }
+
+        private void buttonCheck_Click(object sender, EventArgs e)
+        {
+            DataTable Tanggal = new DataTable();
+            sqlQuery = "select date_format(match_date,\"%e %M %Y\") as Tanggal, concat(goal_home,' - ',goal_away) as Skor from `match` where match.team_home = '" + comboBoxHome.SelectedValue.ToString() + "' and match.team_away = '" + comboBoxAway.SelectedValue.ToString() + "'";
+            sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+            sqlAdapter = new MySqlDataAdapter(sqlCommand);
+            sqlAdapter.Fill(Tanggal);
+            labelHasilTanggal.Text = Tanggal.Rows[0]["Tanggal"].ToString();
+            labelHasilSkor.Text = Tanggal.Rows[0]["Skor"].ToString();
+        }
     }
 }
